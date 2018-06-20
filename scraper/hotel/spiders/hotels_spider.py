@@ -4,7 +4,8 @@ import scrapy
 class HotelSpider(scrapy.Spider):
     name = 'hotels'
 
-    start_urls = ['https://www.tripadvisor.com/Hotels-g293961-Sri_Lanka-Hotels.html']
+    start_urls = ['https://www.tripadvisor.com/Hotels-g293961-Sri_Lanka-Hotels.html',
+                  "exit"]
 
     def parse(self, response):
         # follow links to author pages
